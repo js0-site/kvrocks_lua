@@ -1,0 +1,25 @@
+[package]
+name = "r_"
+version = "0.2.0"
+edition = "2024"
+license = "MulanPSL-2.0"
+repository = "https://github.com/js0-site/kvrocks_lua.git"
+homepage = "https://github.com/js0-site/kvrocks_lua/tree/dev/r_"
+description = "r_"
+keywords = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[features]
+default = []
+
+[dev-dependencies]
+anyhow = "1.0.100"
+log = "0.4.28"
+static_init = "1.0.4"
+
+[dev-dependencies.log_init]
+path = "../log_init"
+version = "0.1.28"
